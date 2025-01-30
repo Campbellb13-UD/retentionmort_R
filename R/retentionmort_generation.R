@@ -255,27 +255,28 @@
 #'                         b_mort_c1=1.06, m_ret_c1=-0.113, b_ret_c1=1.05
 #'                         )
 #'            #or
-#'   datacomp = retentionmort(n = 100, max_weeks = 100, prop_class1 = 0,
+#'   datacomp = retentionmort_generation(n = 100, max_weeks = 100, prop_class1 = 0,
 #'                         max_recap = 0.5, err = NA, m_mort_c2=-0.0203,
 #'                         b_mort_c2=1.03, m_ret_c2=-0.0541, b_ret_c2=0.993
 #'                         )
 #'
 #'
 #' #Using custom model parameters for two class types
-#'   datacomp = retentionmort(n = 100, max_weeks = 100, prop_class1 =
+#'   datacomp = retentionmort_generation(n = 100, max_weeks = 100, prop_class1 =
 #'                         0, max_recap = 0.5, err = NA, m_mort_c1=-0.0625,
 #'                         b_mort_c1=1.06, m_ret_c1=-0.113, b_ret_c1=1.05,
 #'                         m_mort_c2=-0.0203, b_mort_c2=1.03, m_ret_c2=-0.0541,
 #'                         b_ret_c2=0.993
 #'                         )
 #'           #or
-#'   datacomp = retentionmort(n = 100, max_weeks = 100, prop_class1 =
+#'   datacomp = retentionmort_generation(n = 100, max_weeks = 100, prop_class1 =
 #'                         0, max_recap = 0.5, err = 2, m_mort_c1=-0.0625,
 #'                         b_mort_c1=1.06, m_ret_c1=-0.113, b_ret_c1=1.05,
 #'                         m_mort_c2=-0.0203, b_mort_c2=1.03, m_ret_c2=-0.0541,
 #'                         b_ret_c2=0.993
 #'                         ) #err gets overrided by customized coefficients
 #'
+#' @importFrom stats runif
 #'
 #' @export
 retentionmort_generation = function(n = 100,         # number of datasets generated and ran through the model

@@ -2,7 +2,7 @@
 % Please edit documentation in R/test_dataset_retentionmort.R
 \name{test_dataset_retentionmort}
 \alias{test_dataset_retentionmort}
-\title{Generate a test dataset that can be input into the \code{retenionmort} function}
+\title{Generate a test dataset that can be input into the \code{retentionmort} function}
 \usage{
 test_dataset_retentionmort()
 }

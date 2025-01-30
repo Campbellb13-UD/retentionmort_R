@@ -5,7 +5,7 @@
 #' in the working directory named `retentionmort.html`that provides helpful
 #' information on the error associated with the number of recaptured individuals
 #' compared to the expected number provided by the model. Some figures will be
-#' less applicable for the field data application using the `retenionmort`
+#' less applicable for the field data application using the `retentionmort`
 #' function due to a low sample size, specifically figures 5 and 6.
 #'
 #' @param datacomp The file generated from either the `retentionmort` or
@@ -33,6 +33,13 @@
 #' #Creating the markdown on datacomp
 #'    Rmark = retentionmort_figure(datacomp)
 #'
+#' @import dplyr
+#' @import ggplot2
+#' @importFrom gridExtra grid.arrange
+#' @import patchwork
+#' @import readr
+#' @import rmarkdown
+#'
 #' @export
 retentionmort_figure <- function(datacomp){
 
@@ -54,6 +61,7 @@ Install packages and load the dataset named *datacomp* from either the *retentio
 - gridExtra
 - patchwork
 - readr
+- rmarkdown
 
 \`\`\`{r include=FALSE}
 if (!require(ggplot2)) install.packages('ggplot2')

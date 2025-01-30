@@ -1,5 +1,6 @@
 Package: retmort
-Title: Estimate user-based tagging mortality and tag loss in mark-recapture studies
+Title: Estimate User-Based Tagging Mortality and Tag Loss in
+        Mark-Recapture Studies
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given="Brendan", family="Campbell", , email="bpc@udel.edu", role = c("aut", "cre"),
@@ -13,10 +14,10 @@ Authors@R:
             person(given="Madison", family="Windsor", role = c("aut"),
            comment = c(ORCID = "0009-0000-4517-0677")),
             person(given="Aaron", family="Carlisle", role = c("aut"),
-           comment = c(ORCID = "000-0003-0796-6564")),   
+           comment = c(ORCID = "0000-0003-0796-6564")),   
             person(given="Edward", family="Hale", role = c("aut"),
            comment = c(ORCID = "0000-0002-7176-6420")))            
-Description: This package provides several avenues to predict and account for 
+Description: We provide several avenues to predict and account for 
              user-based mortality and tag loss during mark-recapture studies.
              When planning a study on a target species, the 
              `retentionmort_generation` function can be used to produce multiple
@@ -29,10 +30,20 @@ Description: This package provides several avenues to predict and account for
              example dataset of how data should be inputted into the function to
              run properly. Lastly, the `retentionmort_figure` function can be
              used on any dataset generated from either model function to produce
-             an Rmarkdown prinout of preliminary analysis associated with the
+             an rmarkdown printout of preliminary analysis associated with the
              model, including summary statistics and figures.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
+Imports: dplyr, ggplot2, gridExtra, patchwork, readr, rmarkdown
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-30 19:47:53 UTC; Brendan
+Author: Brendan Campbell [aut, cre] (<https://orcid.org/0000-0001-5604-7658>),
+  Jasper McCutcheon [aut] (<https://orcid.org/0009-0004-4138-532X>),
+  Rileigh Hudock [aut] (<https://orcid.org/0009-0009-2769-2880>),
+  Noah Motz [aut] (<https://orcid.org/0009-0002-2480-9712>),
+  Madison Windsor [aut] (<https://orcid.org/0009-0000-4517-0677>),
+  Aaron Carlisle [aut] (<https://orcid.org/0000-0003-0796-6564>),
+  Edward Hale [aut] (<https://orcid.org/0000-0002-7176-6420>)
+Maintainer: Brendan Campbell <bpc@udel.edu>

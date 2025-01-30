@@ -1,4 +1,4 @@
-#' Generate a test dataset that can be input into the `retenionmort` function
+#' Generate a test dataset that can be input into the `retentionmort` function
 #'
 #' Using the example code verbatim, this function will produce a series of
 #' outputs that can be directly input into the `retentionmort` function.
@@ -27,6 +27,8 @@
 #'
 #' #Run this verbatim to produce a single mark-recapture dataset
 #' list2env(test_dataset_retentionmort(), envir = .GlobalEnv)
+#'
+#'@importFrom stats runif
 #'
 #' @export
 test_dataset_retentionmort = function(){

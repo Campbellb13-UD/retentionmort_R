@@ -22,7 +22,7 @@ By inputing the \code{datacomp} dataframe, this function will save a markdown fi
 in the working directory named \code{retentionmort.html}that provides helpful
 information on the error associated with the number of recaptured individuals
 compared to the expected number provided by the model. Some figures will be
-less applicable for the field data application using the \code{retenionmort}
+less applicable for the field data application using the \code{retentionmort}
 function due to a low sample size, specifically figures 5 and 6.
 }
 \examples{
