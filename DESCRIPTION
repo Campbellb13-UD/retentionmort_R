@@ -1,0 +1,38 @@
+Package: retmort
+Title: Estimate user-based tagging mortality and tag loss in mark-recapture studies
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given="Brendan", family="Campbell", , email="bpc@udel.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5604-7658")),
+            person(given="Jasper", family="McCutcheon", role = c("aut"),
+           comment = c(ORCID = "0009-0004-4138-532X")), 
+            person(given="Rileigh", family="Hudock", role = c("aut"),
+           comment = c(ORCID = "0009-0009-2769-2880")),
+            person(given="Noah", family="Motz", role = c("aut"),
+           comment = c(ORCID = "0009-0002-2480-9712")),
+            person(given="Madison", family="Windsor", role = c("aut"),
+           comment = c(ORCID = "0009-0000-4517-0677")),
+            person(given="Aaron", family="Carlisle", role = c("aut"),
+           comment = c(ORCID = "000-0003-0796-6564")),   
+            person(given="Edward", family="Hale", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7176-6420")))            
+Description: This package provides several avenues to predict and account for 
+             user-based mortality and tag loss during mark-recapture studies.
+             When planning a study on a target species, the 
+             `retentionmort_generation` function can be used to produce multiple
+             synthetic mark-recapture datasets to anticipate the error 
+             associated with a planned field study to guide method development
+             to reduce error. Similarly, if field data was already collected, 
+             the `retentionmort` function can be used to predict the error from
+             already generated data to adjust for user-based mortality and tag
+             loss. The `test_dataset_retentionmort` function will provide an
+             example dataset of how data should be inputted into the function to
+             run properly. Lastly, the `retentionmort_figure` function can be
+             used on any dataset generated from either model function to produce
+             an Rmarkdown prinout of preliminary analysis associated with the
+             model, including summary statistics and figures.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
